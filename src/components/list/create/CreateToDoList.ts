@@ -25,7 +25,7 @@ export default defineComponent({
         name: this.list.name,
         liveTime: this.list.liveTime
       });
-      const requestUrl = process.env.VUE_APP_ETHER_TODO_SERVICE_URL + "/todo/list";
+      const requestUrl = process.env.VUE_APP_ETHER_TODO_SERVICE_URL + "/todo/list/";
       axios
         .post(requestUrl, body, header)
         .then((response: AxiosResponse) => {

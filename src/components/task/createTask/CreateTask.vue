@@ -21,10 +21,11 @@
     <Chrome v-model="colors"/>
         <button type="button" class="btn btn btn-outline-info text-center">color</button>
     </div> -->
-    <div class="col-md-2" v-if="showCreateTask">
+    <div class="col-md-1" v-if="showCreateTask">
       <button type="button" class="pull-right btn btn btn-outline-success" 
         style="margin-right: 5px;" :disabled='task.task == ""' @click="addTask">Add</button> 
-
+    </div>
+    <div class="col-md-1" v-if="showCreateTask">
       <button type="button" class="pull-right btn btn btn-outline-danger" @click="showCreateTask = !showCreateTask">Cancel</button>
     </div>
   </div>

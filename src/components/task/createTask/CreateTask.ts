@@ -38,7 +38,7 @@ export default defineComponent({
         topic: "testClient1",
         message: JSON.stringify(this.task),
       });
-      this.connection.send(body)
+      this.connection.send(body);
       this.task.task = "";
       this.task.dueDate = null;
       this.task.color = "";

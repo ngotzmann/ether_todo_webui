@@ -1,16 +1,10 @@
 <template>
-  <div class="container">
-    <div class="row">
-      <div style="margin-top: 15px" class="col-md-12 titel">
-        <h2>EtherToDo</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <router-view></router-view>
-      </div>
-    </div>
-  </div>
+<div class="jumbotron text-center title">
+    <h1>EtherToDo</h1>
+</div>
+<div class="container">
+  <router-view></router-view>
+</div>
 </template>
 
 <script lang="ts">
@@ -24,11 +18,14 @@ export default {};
   border-color: #198754;
 }
 
-.titel {
+.title {
   color: #228b22;
   text-align: left;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 0px; 
+  margin-bottom:0; 
+  background: #f8f8f8; 
+  height: 4em; 
+  padding-top: 8px;
 }
 
 .container {
